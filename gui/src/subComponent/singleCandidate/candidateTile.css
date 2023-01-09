@@ -1,0 +1,10 @@
+.singleCandidateTile {
+    -fx-background-color: lightblue;
+    -fx-border-width: 5px;
+    -fx-border-color: #2e8b57;
+    -fx-background-radius: 5.0;
+}
+
+.label {
+    -fx-text-fill: BLACK;
+}

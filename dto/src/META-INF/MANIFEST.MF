@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: main.UBoatMain
+Class-Path: gson-2.1.jar gson-2.1-javadoc.jar gson-2.1-sources.jar okio-
+ 2.8.0.jar okhttp-4.9.1.jar annotations-13.0.jar kotlin-stdlib-1.4.10.ja
+ r kotlin-stdlib-common-1.4.10.jar
+

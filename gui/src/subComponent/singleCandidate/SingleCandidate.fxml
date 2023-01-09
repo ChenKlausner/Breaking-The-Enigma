@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="tileVbox" alignment="CENTER" maxHeight="178.0" maxWidth="329.0" minHeight="135.0" minWidth="150.0" prefHeight="135.0" prefWidth="298.0" spacing="2.0" styleClass="singleCandidateTile" stylesheets="@candidateTile.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.singleCandidate.SingleCandidateController">
+   <children>
+      <Label fx:id="candidateStringLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="70.0" maxWidth="1.7976931348623157E308" minHeight="38.0" prefHeight="65.0" prefWidth="220.0" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="threadNameLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="220.0" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeConfigurationLabel" alignment="CENTER" layoutX="10.0" layoutY="91.0" maxWidth="1.7976931348623157E308" prefHeight="71.0" prefWidth="220.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</VBox>

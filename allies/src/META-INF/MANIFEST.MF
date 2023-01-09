@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: main.AlliesMain
+Class-Path: gsonOkHttp\okio-2.8.0.jar gsonOkHttp\okhttp-4.9.1.jar gsonOk
+ Http\annotations-13.0.jar gsonOkHttp\kotlin-stdlib-1.4.10.jar gsonOkHtt
+ p\kotlin-stdlib-common-1.4.10.jar gsonOkHttp\gson-2.1.jar gsonOkHttp\gs
+ on-2.1-javadoc.jar gsonOkHttp\gson-2.1-sources.jar dto.jar
+

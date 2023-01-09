@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="280.0" prefWidth="259.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.currentCode.CurrentCodeController">
+   <children>
+      <VBox alignment="CENTER" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="194.0" text="Plugboard" textAlignment="CENTER" underline="true" />
+            <FlowPane fx:id="plugBoardBorderPane" alignment="CENTER" hgap="3.0" prefHeight="86.0" prefWidth="224.0" vgap="3.0" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="259.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="21.0" prefWidth="129.0" text="Rotor Id" />
+            <Label alignment="CENTER" prefHeight="21.0" prefWidth="131.0" text="Position" />
+            <Label alignment="CENTER" prefHeight="21.0" prefWidth="125.0" text="Notch" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="rotorIdViewList" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="positionsViewList" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="notchViewList" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" fillHeight="false" spacing="5.0" VBox.vgrow="NEVER">
+         <children>
+            <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="142.0" text="Reflector:" underline="true" />
+            <TextField fx:id="reflectorTextField" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="48.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

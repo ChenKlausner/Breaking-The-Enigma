@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="allies:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/allies_jar</output-path>
+    <root id="root">
+      <element id="archive" name="allies.jar">
+        <element id="module-output" name="allies" />
+        <element id="module-output" name="dto" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/3rd/okHttp/okio-2.8.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/3rd/okHttp/okhttp-4.9.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/3rd/okHttp/annotations-13.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/3rd/okHttp/kotlin-stdlib-1.4.10.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/3rd/okHttp/kotlin-stdlib-common-1.4.10.jar" />
+      <element id="library" level="project" name="gson-2.1" />
+    </root>
+  </artifact>
+</component>

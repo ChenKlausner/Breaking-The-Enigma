@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="713.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.dashboard.DashboardTabController">
+   <bottom>
+      <AnchorPane prefHeight="253.0" prefWidth="949.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="candidatesTableView" layoutX="138.0" layoutY="11.0" prefHeight="200.0" prefWidth="659.0">
+              <columns>
+                <TableColumn fx:id="candidateCol" prefWidth="332.0" text="Candidte" />
+                <TableColumn fx:id="codeConfigurationCol" minWidth="0.0" prefWidth="326.0" text="Code Configuration" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="237.0" prefWidth="949.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Contest data" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="9.0" layoutY="42.0" prefHeight="172.0" prefWidth="428.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Battlefield name:" underline="true" />
+                        <Label fx:id="battlefieldNameLabel" prefHeight="21.0" prefWidth="162.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Amount of allies teams:" underline="true" />
+                        <Label fx:id="numOfAliieTeamsLabel" prefHeight="21.0" prefWidth="192.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Difficulty level:" underline="true" />
+                        <Label fx:id="difficultyLabel" prefHeight="21.0" prefWidth="219.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Contest Status:" underline="true" />
+                        <Label fx:id="statusLabel" prefHeight="21.0" prefWidth="188.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="106.0" prefHeight="51.0" prefWidth="428.0" spacing="5.0">
+                     <children>
+                        <Label text="Allie Team:" underline="true" />
+                        <Label fx:id="allieTeamLabel" prefHeight="21.0" prefWidth="188.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="21.0" prefWidth="225.0" text="Agent progress &amp; status" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="35.0" prefHeight="172.0" prefWidth="428.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Total missions:" underline="true" />
+                        <Label fx:id="totalMissionLabel" prefHeight="21.0" prefWidth="162.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label text="Total completed missions:" underline="true" />
+                        <Label fx:id="totalCompletedMissionsLabel" prefHeight="21.0" prefWidth="192.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="330.0" text="Current amount of mission in queue:" underline="true" />
+                        <Label fx:id="amountOfMissionInQueueLabel" prefHeight="21.0" prefWidth="219.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="266.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="219.0" text="Total amount of candidates:" underline="true" />
+                        <Label fx:id="totalCandidatesLabel" prefHeight="21.0" prefWidth="188.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

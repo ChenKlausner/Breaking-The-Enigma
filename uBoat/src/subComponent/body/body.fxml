@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1003.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.body.BodyController">
+  <tabs>
+    <Tab text="Machine">
+         <content>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="1003.0">
+               <children>
+                  <ScrollPane prefHeight="683.0" prefWidth="1003.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <fx:include fx:id="machineTabComponent" source="../machineTab/machineTab.fxml" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Contest">
+         <content>
+            <AnchorPane prefHeight="671.0" prefWidth="1042.0">
+               <children>
+                  <ScrollPane prefHeight="683.0" prefWidth="1003.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <fx:include fx:id="bruteForceTabComponent" source="../bruteForceTab/bruteForceTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</TabPane>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="713.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.machineTab.MachineTabController">
+   <top>
+      <GridPane hgap="4.0" prefHeight="170.0" prefWidth="989.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="NEVER" percentWidth="0.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="426.0" minWidth="383.0" prefWidth="383.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="NEVER" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="NEVER" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" vgrow="NEVER" />
+            <RowConstraints fillHeight="false" maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="NEVER" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="27.0" prefWidth="376.0" text="Specifications" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="21.0" prefWidth="557.0" spacing="5.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Rotor in use\Possible amount of rotors:" HBox.hgrow="NEVER" />
+                  <Label fx:id="rotorInUseLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="3">
+               <children>
+                  <Label text="Amount of reflectors:" />
+                  <Label fx:id="amountOfReflectorLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4">
+               <children>
+                  <Label lineSpacing="5.0" text="Amount of massages that were encrypt/decrypt in the machine:" />
+                  <Label fx:id="messageCounterLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="5">
+               <children>
+                  <Label lineSpacing="5.0" text="Original code configuration:" />
+                  <Label fx:id="originalCodeLabel" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="6">
+               <children>
+                  <Label text="Current Code configuration:" />
+                  <Label fx:id="currentCodeLabel" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <GridPane alignment="CENTER" hgap="5.0" vgap="5.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" />
+            <RowConstraints maxHeight="42.0" minHeight="30.0" prefHeight="32.0" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="57.0" />
+            <RowConstraints maxHeight="76.0" minHeight="24.0" prefHeight="24.0" />
+            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="28.0" />
+            <RowConstraints maxHeight="9.0" minHeight="1.0" prefHeight="1.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="31.0" />
+            <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="31.0" />
+            <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="51.0" />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints />
+            <RowConstraints vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="13" GridPane.rowSpan="2">
+               <children>
+                  <Button fx:id="codeConfigurationButton" mnemonicParsing="false" onAction="#setCodeConfigurationButtonHandler" prefHeight="31.0" prefWidth="240.0" text="Set Code Configuration" />
+                  <Button fx:id="randomCodeButton" mnemonicParsing="false" onAction="#randomCodeButtonPressedHandler" prefHeight="31.0" prefWidth="240.0" text="Set Random Code Cofiguration" />
+                  <Button fx:id="clearConfigurationButton" mnemonicParsing="false" onAction="#clearSelectionEventHandler" prefHeight="31.0" prefWidth="240.0" text="Clear Configuration Selection" />
+               </children>
+            </VBox>
+            <Label prefHeight="27.0" prefWidth="179.0" text="Code Calibration" textAlignment="CENTER" underline="true" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="123.0" text="ROTORS" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="540.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="5" GridPane.rowSpan="5">
+               <content>
+                  <HBox fx:id="rotorInUseHBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="132.0" prefWidth="500.0" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <VBox prefHeight="53.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="2">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="118.0" text="REFLECTOR" />
+                  <HBox prefHeight="16.0" prefWidth="193.0" spacing="5.0">
+                     <children>
+                        <ComboBox fx:id="reflectorComboBox" prefHeight="31.0" prefWidth="106.0" />
+                        <Text fx:id="reflectorTextErrorMsg" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Reflector is required!" visible="false" wrappingWidth="208.3876953125">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Text fx:id="rotorsTextErrorMsg" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label prefHeight="21.0" prefWidth="146.0" text="PLUGBOARD" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <ScrollPane minWidth="-Infinity" prefHeight="157.0" prefWidth="540.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="12" GridPane.rowSpan="5">
+               <content>
+                  <FlowPane fx:id="plugBoardFlowPane" alignment="CENTER" hgap="10.0" prefHeight="132.0" prefWidth="532.0" vgap="10.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="299.0" prefWidth="261.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="10" GridPane.vgrow="ALWAYS">
+               <content>
+                  <fx:include fx:id="currentCodeComponent" source="../currentCode/currentCode.fxml" />
+               </content>
+            </ScrollPane>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" text="Current code configuration" underline="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

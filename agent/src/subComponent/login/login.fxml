@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.login.LoginController">
+   <tabs>
+      <Tab closable="false" text="Login">
+         <content>
+            <GridPane hgap="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="484.0" vgap="3.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+                <ColumnConstraints hgrow="ALWAYS" />
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="NEVER" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="20.0" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <VBox spacing="20.0" GridPane.columnSpan="3">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="614.0" spacing="5.0">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="User Name:">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="userNameTextField" prefHeight="23.0" prefWidth="187.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="33.0" prefWidth="469.0" spacing="5.0">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Allie Team:">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="allieTeamsComboBox" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="34.0" prefWidth="469.0" spacing="5.0">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Amount of Threads:">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="amountOfThreadComboBox" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="469.0" spacing="5.0">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Amount of Tasks:">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="amountOfTasksTextField" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label fx:id="errorMessageLabel" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="471.0" styleClass="error-label" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <HBox alignment="CENTER" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="31.0" prefWidth="82.0" styleClass="main-action-button" text="Login" />
+                        <Button id="quit-button" fx:id="quitButtonClicked" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" styleClass="main-action-button" text="Quit" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="713.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subComponent.dashboard.DashboardTabController">
+   <top>
+      <AnchorPane prefHeight="309.0" prefWidth="949.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="30.0" prefWidth="162.0" text="Contest data" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="contestDataTableView" layoutX="21.0" layoutY="54.0" prefHeight="200.0" prefWidth="903.0">
+               <columns>
+                  <TableColumn fx:id="battlefieldNameCol" prefWidth="157.0" text="Battlefield Name" />
+                  <TableColumn fx:id="uboatUserNameCol" minWidth="5.0" prefWidth="156.0" text="UBoat user name" />
+                  <TableColumn fx:id="statusCol" minWidth="0.0" prefWidth="83.0" text="Status" />
+                  <TableColumn fx:id="difficultyLevelCol" minWidth="0.0" prefWidth="126.0" text="Difficulty Level" />
+                  <TableColumn fx:id="listedTeamsVsNeededTeamsCol" prefWidth="380.0" text="Listed allie teams\Required allies teams" />
+               </columns>
+            </TableView>
+            <Button fx:id="signButton" layoutX="875.0" layoutY="264.0" mnemonicParsing="false" onAction="#signButtonOnActionHandler" text="Sign" />
+            <Label fx:id="signInfoLabel" layoutX="21.0" layoutY="269.0" prefHeight="21.0" prefWidth="462.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="343.0" prefWidth="949.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="-1.0" prefHeight="30.0" prefWidth="238.0" text="Team's agents data" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="teamsAgentDataTableView" layoutX="21.0" layoutY="41.0" prefHeight="171.0" prefWidth="434.0">
+              <columns>
+                <TableColumn fx:id="agentUserNameCol" prefWidth="140.0" text="Agent user name" />
+                <TableColumn fx:id="amountOfThreadsCol" prefWidth="151.0" text="Amount of Threads" />
+                  <TableColumn fx:id="amountOfTasks" prefWidth="151.0" text="Amount of tasks" />
+              </columns>
+            </TableView>
+            <Separator layoutX="6.0" layoutY="232.0" prefHeight="0.0" prefWidth="938.0" />
+            <Button fx:id="readyButton" disable="true" layoutX="803.0" layoutY="255.0" mnemonicParsing="false" onAction="#allieReadyButtonOnActionHandler" prefHeight="53.0" prefWidth="116.0" text="Ready" />
+            <Label layoutX="21.0" layoutY="245.0" prefHeight="25.0" prefWidth="144.0" text="Allie Task size:" underline="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="allieTaskSizeTextField" layoutX="175.0" layoutY="244.0" promptText="Insert possitive number.." />
+            <Label fx:id="invalidReadyLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="287.0" prefHeight="21.0" prefWidth="747.0" />
+         </children></AnchorPane>
+   </bottom>
+   <center>
+      <Separator prefHeight="41.0" prefWidth="949.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
