@@ -1,5 +1,4 @@
 # Breaking-The-Enigma
-Java project: Enigma machine implementation, including automatic descipher process (using brute force).
-The machine implementation is created base on (xml) file and is a generic one, not limitted to a certain scale.
-The process involved working with multiple threads, files, collections and other OOP concepts and principles (e.g. interfaces, encapsulation, SOLID).
-The project architecture includes console, desktop and client-server (based on HTTP).
+This Java project encompasses an Enigma machine implementation, complete with an automatic decipher process. The machine implementation is dynamically configured based on an XML file, offering a versatile and generic solution adaptable to various scales. The development process delves into advanced Object-Oriented Programming (OOP) concepts and principles, leveraging features such as interfaces, encapsulation, and adherence to SOLID principles.
+
+The architecture of the project is robust, incorporating support for multiple threads, file operations, collections, and other fundamental OOP concepts. It spans across different user interfaces, including a console interface, a desktop application, and a client-server model based on HTTP. This diverse architecture not only showcases the flexibility of the Enigma machine implementation but also highlights the project's proficiency in handling various application scenarios.
